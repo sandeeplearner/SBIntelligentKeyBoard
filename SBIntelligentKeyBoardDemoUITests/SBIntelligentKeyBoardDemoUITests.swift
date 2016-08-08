@@ -2,8 +2,8 @@
 //  SBIntelligentKeyBoardDemoUITests.swift
 //  SBIntelligentKeyBoardDemoUITests
 //
-//  Created by Developer on 09/08/16.
-//  Copyright © 2016 Sandeep. All rights reserved.
+//  Created by Sandeep Bhandari on 09/08/16.
+//  Copyright © 2016 Sandeep Bhandari. All rights reserved.
 //
 
 import XCTest

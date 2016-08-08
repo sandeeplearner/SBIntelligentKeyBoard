@@ -2,8 +2,8 @@
 //  SBTextFieldObserver.swift
 //  TestCode
 //
-//  Created by Sandeep on 08/08/16.
-//  Copyright © 2016 Developer. All rights reserved.
+//  Created by Sandeep Bhandari on 08/08/16.
+//  Copyright © 2016 Sandeep Bhandari. All rights reserved.
 //
 
 import UIKit
