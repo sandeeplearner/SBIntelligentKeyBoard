@@ -14,6 +14,8 @@
 		8BBF1C4B1D5923AF006337DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBF1C491D5923AF006337DA /* LaunchScreen.storyboard */; };
 		8BBF1C561D5923AF006337DA /* SBIntelligentKeyBoardDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF1C551D5923AF006337DA /* SBIntelligentKeyBoardDemoTests.swift */; };
 		8BBF1C611D5923AF006337DA /* SBIntelligentKeyBoardDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF1C601D5923AF006337DA /* SBIntelligentKeyBoardDemoUITests.swift */; };
+		8BBF1C721D592570006337DA /* SBKeyBoardInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF1C701D592570006337DA /* SBKeyBoardInputAccessoryView.swift */; };
+		8BBF1C731D592570006337DA /* SBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF1C711D592570006337DA /* SBTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8BBF1C5C1D5923AF006337DA /* SBIntelligentKeyBoardDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBIntelligentKeyBoardDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBF1C601D5923AF006337DA /* SBIntelligentKeyBoardDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBIntelligentKeyBoardDemoUITests.swift; sourceTree = "<group>"; };
 		8BBF1C621D5923AF006337DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BBF1C701D592570006337DA /* SBKeyBoardInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBKeyBoardInputAccessoryView.swift; path = SBIntelligentKeyBoard/SBKeyBoardInputAccessoryView.swift; sourceTree = "<group>"; };
+		8BBF1C711D592570006337DA /* SBTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBTextField.swift; path = SBIntelligentKeyBoard/SBTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		8BBF1C3F1D5923AF006337DA /* SBIntelligentKeyBoardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8BBF1C741D5925B5006337DA /* SBIntelligentKeyBoard */,
 				8BBF1C401D5923AF006337DA /* AppDelegate.swift */,
 				8BBF1C421D5923AF006337DA /* ViewController.swift */,
 				8BBF1C441D5923AF006337DA /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				8BBF1C621D5923AF006337DA /* Info.plist */,
 			);
 			path = SBIntelligentKeyBoardDemoUITests;
+			sourceTree = "<group>";
+		};
+		8BBF1C741D5925B5006337DA /* SBIntelligentKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				8BBF1C701D592570006337DA /* SBKeyBoardInputAccessoryView.swift */,
+				8BBF1C711D592570006337DA /* SBTextField.swift */,
+			);
+			name = SBIntelligentKeyBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBF1C721D592570006337DA /* SBKeyBoardInputAccessoryView.swift in Sources */,
 				8BBF1C431D5923AF006337DA /* ViewController.swift in Sources */,
+				8BBF1C731D592570006337DA /* SBTextField.swift in Sources */,
 				8BBF1C411D5923AF006337DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,10 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,UITextFieldDelegate,SBKeyBoardProtocol{
+    @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //all you have to write now is
+        self.textField.configure()
+        self.textField.sbkeyboardDelegate = self
+        self.textField.delegate = self
+
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -21,5 +28,9 @@ class ViewController: UIViewController {
     }
 
 
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.textField.resignFirstResponder()
+        return true
+    }
 }
 
