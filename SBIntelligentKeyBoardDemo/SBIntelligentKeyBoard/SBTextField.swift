@@ -62,13 +62,13 @@ extension UITextField : KeyBoardObserverProtocol{
             }
             
             if(self.shouldHandleUI == true) {
-                var convertedRect = (self.sbkeyboardDelegate as! UIViewController).view.convertRect(frame, toView: nil)
+                var convertedRect = self.superview?.convertRect(frame, toView: nil)
                 if self.traitCollection.displayScale == 1.0 {
-                    convertedRect.origin.y = convertedRect.origin.y - (self.frame.height + 5)
+                    convertedRect?.origin.y = (convertedRect?.origin.y)! - (self.frame.height + 5)
                 }
                 
-                if CGRectContainsPoint(convertedRect, self.frame.origin) == true {
-                    UIApplication.sharedApplication().keyWindow?.frame = CGRectMake(0, -((self.frame.origin.y - convertedRect.origin.y) + (self.frame.size.height + 5)),  (UIApplication.sharedApplication().keyWindow?.frame.size.width)!,  (UIApplication.sharedApplication().keyWindow?.frame.size.height)!)
+                if CGRectContainsPoint(convertedRect!, self.frame.origin) == true {
+                    UIApplication.sharedApplication().keyWindow?.frame = CGRectMake(0, -((self.frame.origin.y - convertedRect!.origin.y) + (self.frame.size.height + 5)),  (UIApplication.sharedApplication().keyWindow?.frame.size.width)!,  (UIApplication.sharedApplication().keyWindow?.frame.size.height)!)
                 }
                 else{
                     UIApplication.sharedApplication().keyWindow?.frame = CGRectMake(0, 0,  (UIApplication.sharedApplication().keyWindow?.frame.size.width)!,  (UIApplication.sharedApplication().keyWindow?.frame.size.height)!)
